@@ -1,0 +1,41 @@
+Form Design Idea
+----------------
+Item Name
+
+Description
+
+Found on (multi choice or dropdrown -> on Road, on Bus/Taxi/Train)
+
+if choose (on Bus/Taxi/Train)
+require -> Bus no. or Taxi no.
+
+if choose (on Road)
+require -> Found Place
+
+Found at (Date)
+
+image
+
+contact info ဆက်သွယ်ရန်လိပ်စာ
+
+Your Name <- show from session
+
+Your Phone <- show from session if exist
+
+======================================================================================
+
+Database Table Design Idea
+---------------------------
+
+id -> primary key
+item_name -> varchar(255) / (not null)
+description -> TEXT / (not null)
+found_on -> varchar(255) / (not null)
+bus_taxi_no. -> varchar(255) / (null)
+place -> varchar(255) / (null)
+date -> DATE / (not null)
+images -> varchar(255) / not null
+user_id -> int / not null
+name->varchar(255) / not null
+phone -> varchar(255) / not null
+address -> varchar(255) / null

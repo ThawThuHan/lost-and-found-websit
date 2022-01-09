@@ -1,0 +1,17 @@
+{
+    "name": "thawthuhan/lostandfound",
+    "autoload": {
+        "psr-4": {
+            "Thawthuhan\\Lostandfound\\": "src/",
+            "Helpers\\": "_classes/Helpers/",
+            "Libs\\": "_classes/Libs/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ThawThuHan",
+            "email": "thawthuhan9@gmail.com"
+        }
+    ],
+    "require": {}
+}

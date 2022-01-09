@@ -1,0 +1,21 @@
+/* body, html {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+} */
+
+
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.img-container {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.img-container img {
+    width: 100%;
+    margin: 20px;
+}
