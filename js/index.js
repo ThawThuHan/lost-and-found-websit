@@ -62,7 +62,7 @@ registerForm.addEventListener("submit", function (e) {
     if (rpassword.value.trim() !== rcpassword.value.trim()) {
         document.querySelector("#c_password_error").textContent = "Password do not match!";
     } else if (!pattern.test(rcpassword.value.trim())) {
-        document.querySelector("#c_password_error").textContent = "Password require at least one digit, Uppercase, lowercase and 8 charater!"
+        document.querySelector("#c_password_error").textContent = "N Password require at least one digit, Uppercase, lowercase and 8 charater!"
     } else {
         document.querySelector("#c_password_error").textContent = "";
         this.submit();
