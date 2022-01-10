@@ -62,14 +62,14 @@
                     <div class="w-75 px-0 px-lg-5">
                         <form id="register-form" action="_actions/register.php" class="text-center" method="POST">
                             <span class="error form-text text-danger" id="form_error"></span>
-                            <input id="r-name" type="text" name="name" placeholder="Your Name" class="form-control mb-2">
-                            <input id="r-email" type="email" name="email" placeholder="Email Address" class="form-control mb-2">
+                            <input id="r-name" type="text" name="name" placeholder="Your Name" class="form-control mb-2" required>
+                            <input id="r-email" type="email" name="email" placeholder="Email Address" class="form-control mb-2" required>
                             <div class="input-group mb-2 rounded-pill">
-                                <input id="register-password" type="password" name="password" placeholder="Password" class="form-control">
+                                <input id="register-password" type="password" name="password" placeholder="Password" class="form-control" required>
                                 <span class="input-group-text"><i id="r-view" class="fas fa-eye-slash"></i></span>
                             </div>
                             <div class="mb-2">
-                                <input id="c-register-password" type="password" name="re-password" placeholder="Re-type Password" class="form-control">
+                                <input id="c-register-password" type="password" name="re-password" placeholder="Re-type Password" class="form-control" required>
                                 <span class="error form-text text-danger" id="c_password_error"></span>
                             </div>
                             <div class="mb-4">
