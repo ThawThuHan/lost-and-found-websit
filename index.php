@@ -44,7 +44,7 @@
                     <?php endif ?>
                     <div class="w-75 px-0 px-lg-5">
                         <form id="login-form" action="_actions/login.php" class="text-center" method="POST">
-                            <input type="email" name="email" placeholder="Email Address" class="form-control rounded-pill mb-4" required>
+                            <input id="l-email" type="email" name="email" placeholder="Email Address" class="form-control rounded-pill mb-4" required>
                             <div class="input-group mb-4 d-flex justify-content-center align-items-center">
                                 <input id="l-password" type="password" name="password" placeholder="Password" class="form-control rounded-pill  me-2" required>
                                 <span><i id="view" class="fas fa-eye-slash"></i></span>
@@ -61,14 +61,15 @@
                     <h3>Register</h3>
                     <div class="w-75 px-0 px-lg-5">
                         <form id="register-form" action="_actions/register.php" class="text-center" method="POST">
-                            <input type="text" name="name" placeholder="Your Name" class="form-control mb-2" required>
-                            <input type="email" name="email" placeholder="Email Address" class="form-control mb-2" required>
+                            <span class="error form-text text-danger" id="form_error"></span>
+                            <input id="r-name" type="text" name="name" placeholder="Your Name" class="form-control mb-2">
+                            <input id="r-email" type="email" name="email" placeholder="Email Address" class="form-control mb-2">
                             <div class="input-group mb-2 rounded-pill">
-                                <input id="register-password" type="password" name="password" placeholder="Password" class="form-control" required>
+                                <input id="register-password" type="password" name="password" placeholder="Password" class="form-control">
                                 <span class="input-group-text"><i id="r-view" class="fas fa-eye-slash"></i></span>
                             </div>
                             <div class="mb-2">
-                                <input id="c-register-password" type="password" name="re-password" placeholder="Re-type Password" class="form-control" required>
+                                <input id="c-register-password" type="password" name="re-password" placeholder="Re-type Password" class="form-control">
                                 <span class="error form-text text-danger" id="c_password_error"></span>
                             </div>
                             <div class="mb-4">
