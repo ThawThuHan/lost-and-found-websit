@@ -4,7 +4,7 @@ namespace Helpers;
 
 class HTTP
 {
-    static $base = "http://localhost/lostandfound";
+    static $base = "http://localhost/lost-and-found-websit";
 
     static function redirect($path, $query = "")
     {
