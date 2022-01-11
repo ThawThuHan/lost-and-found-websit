@@ -13,6 +13,16 @@ class Found_Item_Table
         $this->db = $db->connect();
     }
 
+    public function getAll() {
+        try{
+            $statement = $this->db->query("SELECT * FROM found_items");
+            return $statement->fetchAll();
+        } catch(PDOException $e) {
+            print_r($e->getMessage());
+            return false;
+        }
+    }
+
     public function insert($data)
     {
         try {
